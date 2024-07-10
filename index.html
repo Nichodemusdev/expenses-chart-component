@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Chart component</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <main> 
+    <div class="container">
+        <div class="balance">
+            <div class="amount-blc">
+                <span>My balance</span>
+                <span class="amount">$921.48</span>
+            </div>
+            <div class="toggle">
+                <img src="logo.svg" alt="logo">
+            </div>
+        </div>
+        <div class="spending">
+            <h2>Spending - Last 7 days</h2>
+            <div class="chart" id="chart"></div>
+            <div class="total">
+                <div>
+                    <div class="month-color">Total this month</div>
+                    <div class="amount">$478.33</div>
+                </div>
+                <div>
+                    <div class="percentage">+2.4%</div>
+                    <div class="month-color">from last month</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </main> 
+    <script src="script.js"></script>
+</body>
+</html>
