@@ -1,0 +1,168 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(33, 100%, 98%);
+    color: hsl(25, 47%, 15%);
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 375px;
+    background-color: hsl(27, 66%, 92%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(10, 79%, 65%);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.balance .amount-blc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.balance .amount {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.spending {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.spending h2 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.bar {
+    width: 30px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.bar:active {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: hsl(28, 10%, 53%);
+}
+
+.bar .amount {
+    position: absolute;
+    top: -25px;
+    font-size: 12px;
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+.bar:hover .amount {
+    display: block;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.total .amount {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.total .percentage {
+    font-weight: 600;
+    text-align: end;
+}
+
+.total .month-color {
+    color: hsl(28, 10%, 53%);
+}
+
+@media (max-width: 375px) {
+    .container {
+      height: 100%;  
+    }
+
+    .balance {
+        margin-top: 10%;
+    }
+
+}
+@media (max-width: 414px) {
+    .container {
+      height: 100%;  
+    }
+
+    .balance {
+        margin-top: 10%;
+    }
+
+}
+@media (max-width: 430px) {
+    .container {
+      height: 100%;  
+    }
+
+    .balance {
+        margin-top: 10%;
+    }
+
+}
